@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+.special {
+    color: red;
+    font-weight: bold;
+}
