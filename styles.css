@@ -35,7 +35,7 @@ body {
 }
 
 .banner {
-    background: #E6863E;
+    background: #e3663d;
     padding: 50px;
     color: #ffffff;
     border-radius: 15px;
@@ -92,7 +92,7 @@ body {
 
 .text-content h1 {
     font-size: 36px;
-    color: #FFFFFF; /* Pure white */
+    color: #EC5C2D; /* Pure white */
 }
 
 .text-content p {
@@ -150,7 +150,7 @@ body {
 
 .feature h3 {
     font-size: 18px;
-    color: #E0E0E0; /* Darker grey shade */
+    color: #EC5C2D; /* Darker grey shade */
     margin-top: 10px;
 }
 
