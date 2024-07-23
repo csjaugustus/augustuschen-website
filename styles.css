@@ -116,7 +116,7 @@ body {
 /* Media Queries for Responsive Design */
 @media (min-width: 600px) {
     .container {
-        width: 95%; /* Slightly wider on small screens */
+        width: 100%; /* Slightly wider on small screens */
     }
 }
 
