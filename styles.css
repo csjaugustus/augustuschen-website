@@ -54,7 +54,7 @@ body {
 }
 
 .banner-content {
-    max-width: 70%;
+    max-width: 95%;
     min-width: 200px;    /* Ensure a minimum width on small screens */
 }
 
