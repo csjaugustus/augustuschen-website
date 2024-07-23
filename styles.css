@@ -18,18 +18,30 @@ body {
 .navbar {
     background: #1E1E1E;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Align logo to the left and links to the right */
+    align-items: center; /* Center items vertically */
 }
 
-.navbar a {
-    float: left;
+.navbar .logo img {
+    height: 40px; /* Adjust size as needed */
+    padding: 0px 10px;
+}
+
+.navbar .nav-links {
+    display: flex;
+}
+
+.navbar .nav-links a {
     display: block;
     color: #F0F0F0; /* Light grey shade */
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    font-size: 14px;
 }
 
-.navbar a:hover {
+.navbar .nav-links a:hover {
     background-color: #2C2D2E;
     color: #FFFFFF;
 }
@@ -157,4 +169,62 @@ body {
 .feature p {
     color: #E0E0E0; /* Darker grey shade */
     line-height: 1.6;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+    font-size: 14px; /* Make font size smaller */
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left nav a, .footer-right a {
+    text-decoration: none;
+    color: #555;
+    padding: 5px 0;
+}
+
+.footer-left nav a:hover, .footer-right a:hover {
+    color: #000;
+}
+
+.footer-left nav a {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.footer-right a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-right a::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.footer-right a[href*="github"]::before {
+    background-image: url('github.png'); /* Replace with actual GitHub icon path */
+}
+
+.footer-right a[href*="instagram"]::before {
+    background-image: url('instagram.png'); /* Replace with actual Instagram icon path */
+}
+
+.footer-right a[href*="linkedin"]::before {
+    background-image: url('linkedin.png'); /* Replace with actual LinkedIn icon path */
 }
