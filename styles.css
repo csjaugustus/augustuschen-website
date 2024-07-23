@@ -291,7 +291,7 @@ footer {
 
 .resume-content ul {
     list-style-type: disc;
-    margin-left: 0;
+    margin-left: -20px;
     margin-bottom: 0;
     font-size: 12px;
 }
@@ -301,6 +301,11 @@ footer {
     font-size: 12px;
     line-height: 1.5;
     margin-bottom: 0;
+}
+
+.resume-content ul ul {
+    list-style-type: circle; /* Empty disc bullet points for nested list */
+    margin-left: 0; /* Additional indentation for nested list */
 }
 
 .resume-content h1 {
@@ -369,6 +374,10 @@ footer {
 .entry {
     margin: 10px 0;
     color: #333; /* Dark text for contrast */
+}
+
+.entry p {
+    margin-bottom: 0;
 }
 
 .job h3, 
