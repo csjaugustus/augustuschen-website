@@ -99,7 +99,8 @@ body {
 }
 
 .text-content {
-    max-width: 50%;
+    max-width: 90%;
+    min-height: 1200px;
 }
 
 .text-content h1 {
