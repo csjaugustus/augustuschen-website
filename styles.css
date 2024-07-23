@@ -217,12 +217,30 @@ footer {
     background-image: url('./Images/linkedin.png'); /* Replace with actual LinkedIn icon path */
 }
 
-.gradient-text {
+/* .gradient-text {
     font-size: 2em;
     font-weight: bold;
     background: linear-gradient(90deg, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
     color: transparent;
+} */
+.gradient-text {
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Ensure compatibility */
+    color: transparent;
+    display: inline-block; /* Ensure proper rendering on mobile */
+    text-align: center; /* Center text for better appearance */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .gradient-text {
+        font-size: 1.5em; /* Adjust font size for mobile */
+    }
 }
 
 .title-container {
