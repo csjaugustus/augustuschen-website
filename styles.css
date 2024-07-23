@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-    background-color: #EC642B;
+    background: #1E1E1E;
     overflow: hidden;
 }
 
@@ -23,11 +23,46 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #FF7F50;
+    background-color: #2C2D2E;
     color: #FFFFFF;
 }
 
+.banner {
+    background: #E6863E;
+    padding: 50px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px;
+}
+.banner img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.banner h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+.banner p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.banner a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .container {
+    width: 100%;    /* Default width */
+    /* max-width: 1200px; Optional max width to prevent it from becoming too wide */
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.text-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +81,25 @@ body {
 .text-content p {
     color: #F0F0F0; /* Light grey shade */
     line-height: 1.6;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+    .container {
+        width: 95%; /* Slightly wider on small screens */
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 75%; /* Wider on medium screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 65%; /* Widest on large screens */
+    }
 }
 
 .illustration {
