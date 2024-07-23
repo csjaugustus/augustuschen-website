@@ -41,8 +41,13 @@ body {
     font-size: 14px;
 }
 
+.navbar .nav-links a.active {
+    background-color: #e3663d; /* Highlight color */
+    color: #FFFFFF; /* Text color for active link */
+}
+
 .navbar .nav-links a:hover {
-    background-color: #2C2D2E;
+    background-color: #e3663d;
     color: #FFFFFF;
 }
 
@@ -103,7 +108,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 0 80px;
 }
 
 .text-content {
@@ -188,6 +193,11 @@ footer {
     padding: 5px 0;
 }
 
+.footer-left nav a.active, .footer-right a.active {
+    color: #000000; /* Darker color to indicate active state */
+    font-weight: bold; /* Optional: make the text bold */
+}
+
 .footer-left nav a:hover, .footer-right a:hover {
     color: #000;
 }
@@ -248,10 +258,11 @@ footer {
     width: 100%;    /* Default width */
     max-width: 1200px; /* Optional max width to prevent it from becoming too wide */
     margin: 0 auto;
-    padding: 50px 10px;
+    padding: 20px 10px;
     display: flex;
-    justify-content: center; Centers the content horizontally
+    justify-content: center; 
     align-items: center; /* Centers the content vertically */
+    margin-top: 50px;
 }
 
 .resume-content {
