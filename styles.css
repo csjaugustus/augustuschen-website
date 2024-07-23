@@ -206,13 +206,31 @@ footer {
 }
 
 .footer-right a[href*="github"]::before {
-    background-image: url('github.png'); /* Replace with actual GitHub icon path */
+    background-image: url('./Images/github.png'); /* Replace with actual GitHub icon path */
 }
 
 .footer-right a[href*="instagram"]::before {
-    background-image: url('instagram.png'); /* Replace with actual Instagram icon path */
+    background-image: url('./Images/instagram.png'); /* Replace with actual Instagram icon path */
 }
 
 .footer-right a[href*="linkedin"]::before {
-    background-image: url('linkedin.png'); /* Replace with actual LinkedIn icon path */
+    background-image: url('./Images/linkedin.png'); /* Replace with actual LinkedIn icon path */
+}
+
+.gradient-text {
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.title-container {
+    width: 100%;    /* Default width */
+    max-width: 1200px; /* Optional max width to prevent it from becoming too wide */
+    margin: 0 auto;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center; Centers the content horizontally
+    align-items: center; /* Centers the content vertically */
 }
