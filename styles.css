@@ -92,7 +92,7 @@ body {
 
 .text-content h1 {
     font-size: 36px;
-    color: #EC5C2D; /* Pure white */
+    color: #e3663d; /* Pure white */
 }
 
 .text-content p {
@@ -150,7 +150,7 @@ body {
 
 .feature h3 {
     font-size: 18px;
-    color: #EC5C2D; /* Darker grey shade */
+    color: #e3663d; /* Darker grey shade */
     margin-top: 10px;
 }
 
