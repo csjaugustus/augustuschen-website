@@ -59,7 +59,7 @@ body {
 
 .banner {
     background: #e3663d;
-    padding: 30px;
+    padding: 30px 50px 30px 50px;
     color: #ffffff;
     border-radius: 15px;
     margin: 10px;
@@ -78,7 +78,7 @@ body {
 }
 
 .banner-content {
-    max-width: 95%;
+    max-width: 80%;
     min-width: 200px;    /* Ensure a minimum width on small screens */
     flex: 1;
 }
@@ -240,6 +240,10 @@ footer {
 
 .footer-right a[href*="linkedin"]::before {
     background-image: url('./Images/linkedin.png'); /* Replace with actual LinkedIn icon path */
+}
+
+.footer-center {
+    color: #555
 }
 
 .gradient-text {
