@@ -43,7 +43,7 @@ body {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .navbar .nav-links a.active {
@@ -185,7 +185,7 @@ footer {
     padding: 20px;
     background-color: #f5f5f5;
     border-top: 1px solid #ccc;
-    font-size: 14px; /* Make font size smaller */
+    font-size: 10px; /* Make font size smaller */
 }
 
 .footer-left, .footer-right {
@@ -380,7 +380,7 @@ footer {
     padding: 20px;
     background-color: #f5f5f5;
     border-top: 1px solid #ccc;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .footer-left, .footer-right {
