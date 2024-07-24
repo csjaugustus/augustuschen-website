@@ -21,7 +21,7 @@ function downloadPDF(elementId, filename) {
     var element = document.getElementById(elementId);
 
     html2pdf(element, {
-        margin: 10,
+        margin: 0,
         filename: filename,
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },

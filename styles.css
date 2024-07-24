@@ -12,6 +12,7 @@ p:hover, a:hover, span:hover, div:hover {
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap");
 
 body {
     font-family: 'Poppins', Arial, 'Helvetica Neue', sans-serif;
@@ -108,7 +109,6 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
-
 
 .text-container {
     display: flex;
@@ -280,6 +280,7 @@ footer {
     color: #333; /* Dark text for contrast */
     padding: 50px 50px;
     margin-right: 0;
+    font-size: 11px;
 }
 
 
@@ -290,16 +291,9 @@ footer {
     margin-top: 20px;
 }
 
-.resume-content p {
-    line-height: 1.6;
-    margin: 10px 0;
-    font-size: 12px;
-}
-
 .resume-content ul {
     list-style-type: disc;
-    margin-left: -20px;
-    margin-bottom: 0;
+    margin-left: -30px;
     font-size: 12px;
 }
 
@@ -312,23 +306,22 @@ footer {
 
 .resume-content ul ul {
     list-style-type: circle; /* Empty disc bullet points for nested list */
-    margin-left: -20px; /* Additional indentation for nested list */
+    margin-left: -30px; /* Additional indentation for nested list */
 }
 
 .resume-content h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin: 0;
 }
 
 .resume-content h2 {
-    font-size: 16px;
-    margin-bottom: 0;
-    margin-top: 30px;
+    font-size: 14px;
+    margin: 0;
 }
 
 .resume-content h3 {
-    font-size: 14px;
-    margin-bottom: 0;
+    font-size: 12px;
+    margin: 0;
 }
 
 .resume-time-period {
@@ -373,6 +366,19 @@ footer {
     margin: 10px 10px
 }
 
+.info-bar {
+    margin-bottom: 20px;
+}
+
+#chinese-resume {
+    font-family: 'Noto Serif SC', 'Times New Roman', Times, serif;
+    font-size: 11px;
+}
+
+#chinese-resume :lang(en) {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -400,26 +406,34 @@ footer {
 
 .section-container {
     display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Adjust the gap as needed */
+    flex-direction: column;
     align-items: flex-start;
+    margin: 0 0 5px 0;
+}
+
+.entries-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     page-break-inside: avoid;
+    margin: 0 0 5px 0;
+    width: 100%;
 }
 
 .entry-column {
     display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 0; /* Adjust the gap as needed */
+    margin: 0;
 }
 
 .entry {
-    margin: 10px 0;
+    margin: 5px 5px 0 5px;
     color: #333; /* Dark text for contrast */
 }
 
 .entry p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .job h3, 
@@ -530,4 +544,21 @@ input:checked + .slider:before {
 
 .socials-links a[href*="linkedin"]::before {
     background-image: url('./Images/linkedin-color.png'); /* Replace with actual LinkedIn icon path */
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:#000000;
+    height: 1px;
+  }
+
+  /* persistent resume links */
+/* Add this to your styles.css file */
+.resume-link,
+.resume-link:visited {
+    color: blue !important;
+    text-decoration: underline !important;
 }
