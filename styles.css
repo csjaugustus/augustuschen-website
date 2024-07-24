@@ -495,3 +495,39 @@ input:checked + .slider:before {
     cursor: pointer;
     margin-top: 10px;
 }
+
+/* social links */
+
+.socials-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials-links a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+}
+
+.socials-links a::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.socials-links a[href*="github"]::before {
+    background-image: url('./Images/github-color.png'); /* Replace with actual GitHub icon path */
+}
+
+.socials-links a[href*="instagram"]::before {
+    background-image: url('./Images/instagram-color.png'); /* Replace with actual Instagram icon path */
+}
+
+.socials-links a[href*="linkedin"]::before {
+    background-image: url('./Images/linkedin-color.png'); /* Replace with actual LinkedIn icon path */
+}
