@@ -23,8 +23,8 @@ function downloadPDF(elementId, filename) {
     html2pdf(element, {
         margin: 0,
         filename: filename,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
+        image: { type: 'jpeg', quality: 1.0 },
+        html2canvas: { scale: 4 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
     });
 }
