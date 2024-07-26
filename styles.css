@@ -282,7 +282,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
-    color: #333; /* Dark text for contrast */
+    color: #000000; /* Dark text for contrast */
     padding: 50px 50px;
     margin-right: 0;
     font-size: 11px;
@@ -434,7 +434,7 @@ footer {
 
 .entry {
     margin: 5px 5px 0 5px;
-    color: #333; /* Dark text for contrast */
+    color: #000000; /* Dark text for contrast */
 }
 
 .entry p {
