@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Augustus Chen - About Me</title>
+    <title>Augustus Chen - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./Images/esc_android_robot_5d07d32e-dc8d-4625-8c55-cd14af2682bb.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./Images/esc_android_robot_5d07d32e-dc8d-4625-8c55-cd14af2682bb.ico" type="image/x-icon">
@@ -15,17 +15,29 @@
             <div class="nav-links">
                 <a href="about.html">About Me</a>
                 <a href="resume.html">Resumé</a>
-                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="portfolio" class="active">Portfolio</a>
             </div>
         </div>
-        <div class="title-container">
-            <div class="gradient-text">Here's my portfolio...</div>
-        </div>
-        <div class="text-container">
-            <div class="text-content">
-                <p>Some stuff here...</p>
+
+        <div class="project-banner">
+            <div class="title-container">
+                <div id="banner-title" class="gradient-text">Here's my portfolio...</div>
             </div>
+            <a href="#all" class="active" data-target="all">ALL</a>
+            <a href="#design" data-target="design">DESIGN</a>
+            <a href="#programming" data-target="programming">PROGRAMMING</a>
         </div>
+        
+        <div id="all" class="content-container">
+            <p>Work in progress...</p>
+        </div>
+        <div id="design" class="content-container">
+            <p>Design...</p>
+        </div>
+        <div id="programming" class="content-container">
+            <p>Programming...</p>
+        </div>
+
     <footer>
         <div class="footer-left">
             <nav>
@@ -45,5 +57,6 @@
         </div>
     </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
