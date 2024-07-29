@@ -606,6 +606,7 @@ hr {
 
 .content-container.active {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .project-banner a.active {
@@ -615,20 +616,13 @@ hr {
 
 .portfolio-entry-banner {
     background-color: var(--banner-bg-color, #333); /* Default color if --banner-bg-color is not set */
-    overflow: hidden; 
+    overflow: hidden;
     text-align: center;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     margin: 20px;
     width: 100%;
     align-items: center;
-}
-
-.portfolio-entry-banner .portfolio-link {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    height: 100%;
-    width: 100%;
+    border-radius: 10px;
 }
 
 .portfolio-entry-banner .banner-content {
@@ -638,6 +632,7 @@ hr {
     justify-content: center;
     height: 100%;
     padding: 20px;
+    position: relative;
 }
 
 .portfolio-entry-banner .banner-image {
@@ -647,11 +642,15 @@ hr {
 }
 
 .portfolio-entry-banner .banner-title {
-    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 1.5em;
     color: white;
 }
 
 .portfolio-entry-banner:hover {
+    transform: scale(1.05);
     background-color: var(--banner-bg-color-hover, #555); /* Optional hover color */
 }
