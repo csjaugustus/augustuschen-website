@@ -43,22 +43,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+
 // for portfolio page
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll(".project-banner a");
-    const containers = document.querySelectorAll(".content-container");
+    const articles = document.querySelectorAll(".project-entry-container");
 
-    function showContainer(target) {
-        containers.forEach(container => {
-            if (container.id === target) {
-                container.classList.add("active");
+    function showProjects(target) {
+        articles.forEach(article => {
+            if (target === "all" || article.dataset.tag === target) {
+                article.style.display = "block"; // Ensures the element participates in the grid layout
             } else {
-                container.classList.remove("active");
+                article.style.display = "none"; // Hides the element
             }
         });
 
         links.forEach(link => {
-            if (link.getAttribute("data-target") === target) {
+            if (link.dataset.target === target) {
                 link.classList.add("active");
             } else {
                 link.classList.remove("active");
@@ -69,11 +70,11 @@ document.addEventListener("DOMContentLoaded", function() {
     links.forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
-            const target = link.getAttribute("data-target");
-            showContainer(target);
+            const target = link.dataset.target;
+            showProjects(target);
         });
     });
 
     // Show the "all" section by default
-    showContainer("all");
+    showProjects("all");
 });

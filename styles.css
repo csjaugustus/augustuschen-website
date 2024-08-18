@@ -343,7 +343,7 @@ footer {
     align-items: flex-start;
 }
 
-.resume-sidedock-column {
+.sidedock-column {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -351,7 +351,7 @@ footer {
     margin-top: 10px;
 }
 
-.resume-sidedock {
+.sidedock {
     background-color: #1E1E1E;
     color: #ffffff;
     padding: 10px 10px;
@@ -364,7 +364,7 @@ footer {
     text-align: center;         /* Center the text */
 }
 
-.resume-sidedock img {
+.sidedock img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -594,63 +594,4 @@ hr {
 .project-banner a:hover {
     background-color: #e3663d;
     color: #FFFFFF;
-}
-
-.content-container {
-    display: none;
-    min-height: 300px;
-    justify-content: center;
-    color: #F0F0F0;
-    padding: 10px;
-}
-
-.content-container.active {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.project-banner a.active {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.portfolio-entry-banner {
-    background-color: var(--banner-bg-color, #333); /* Default color if --banner-bg-color is not set */
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    margin: 20px;
-    width: 100%;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.portfolio-entry-banner .banner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 20px;
-    position: relative;
-}
-
-.portfolio-entry-banner .banner-image {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.portfolio-entry-banner .banner-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5em;
-    color: white;
-}
-
-.portfolio-entry-banner:hover {
-    transform: scale(1.05);
-    background-color: var(--banner-bg-color-hover, #555); /* Optional hover color */
 }

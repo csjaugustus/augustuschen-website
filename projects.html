@@ -7,6 +7,68 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./Images/esc_android_robot_5d07d32e-dc8d-4625-8c55-cd14af2682bb.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./Images/esc_android_robot_5d07d32e-dc8d-4625-8c55-cd14af2682bb.ico" type="image/x-icon">
+    <style>
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+            gap: 20px; /* Sets the gap between grid items */
+            margin: 20px; /* Margin around the container */
+        }
+
+        .project-entry-container {
+            padding: 10px;
+            height: 320px; 
+            background-color: rgba(245, 245, 245, 0.9); 
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .project-entry-container p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0 10px 0;
+            transition: opacity 0.3s ease-in-out; 
+        }
+
+        .laptop-screen-container {
+            position: relative;
+            max-height: 80%;
+            margin: 15px;
+        }
+
+        .laptop-screen-container img {
+            max-width: 75%;
+            max-height: 75%;
+            margin: 15px;
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+        }
+
+        .laptop-screen-container img:hover {
+            transform: scale(1.05); /* Slightly increase the size (5% zoom) */
+        }
+
+        .project-entry-link {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit color from the parent */
+            display: block; /* Make the link behave as a block element */
+        }
+
+        .project-entry-container:hover {
+            cursor: pointer; /* Optional: Changes cursor to pointer on hover */
+            filter: brightness(1.05);
+        }
+
+        .inline-logo {
+            height: 30px; /* Adjust the height based on your needs */
+            width: auto; /* Maintain aspect ratio */
+            vertical-align: middle; /* Align the logo with the text */
+            margin-right: 15px; /* Space between the logo and the text */
+        }
+
+    </style>
 </head>
 <body>
     <div class="container">
@@ -23,20 +85,40 @@
             <div class="title-container">
                 <div id="banner-title" class="gradient-text">Projects</div>
             </div>
-            <a href="#all" class="active" data-target="all">ALL</a>
-            <a href="#design" data-target="design">DESIGN</a>
-            <a href="#programming" data-target="programming">PROGRAMMING</a>
+            <a href="#all" class="active" data-target="all">All</a>
+            <a href="#design" data-target="design">Design</a>
+            <a href="#programming" data-target="programming">Programming</a>
         </div>
         
-        <div id="all" class="content-container">
-            <p>Work in progress...</p>
-        </div>
-        <div id="design" class="content-container">
-            <p>Design...</p>
-        </div>
-        <div id="programming" class="content-container">
-            <p>Programming...</p>
-        </div>
+    <div class="projects-container">
+        <a href="https://github.com/csjaugustus/alfred-termsearch" target="_blank" class="project-entry-link">
+            <article class="project-entry-container" data-tag="programming">
+                <p>
+                    <img src="Images/termsearch-icon.png" alt="TermSearch Logo" class="inline-logo">
+                    TermSearch
+                </p>
+                <div class="laptop-screen-container">
+                    <img src="Images/termsearch-laptop-thumbnail.png" alt="TermSearch">
+            </article>
+        </a>
+        <a href="https://github.com/csjaugustus/alfred-bookmarker" target="_blank" class="project-entry-link">
+            <article class="project-entry-container" data-tag="programming">
+                <p>
+                    <img src="Images/bookmarker-icon.png" alt="Bookmarker Logo" class="inline-logo">
+                    Bookmarker
+                </p>
+                <div class="laptop-screen-container">
+                    <img src="Images/bookmarker-preview-laptop.png" alt="Bookmarker">
+                </div>
+            </article>
+        </a>
+        <!-- <article class="project-entry-container" data-tag="programming">
+            <p>Project 3</p>
+            <div class="laptop-screen-container">
+                <img src="Images/laptop-realistic.png" alt="Project 3">
+            </div>
+        </article> -->
+    </div>
 
     <footer>
         <div class="footer-left">
