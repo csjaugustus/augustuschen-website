@@ -595,3 +595,7 @@ hr {
     background-color: #e3663d;
     color: #FFFFFF;
 }
+
+.socials-links a:hover, .footer-left a:hover, .footer-right a:hover, .nav-links a:hover, .logo img:hover{
+    cursor: pointer;
+}
