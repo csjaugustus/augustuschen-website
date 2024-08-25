@@ -596,6 +596,6 @@ hr {
     color: #FFFFFF;
 }
 
-.socials-links a:hover, .footer-left a:hover, .footer-right a:hover, .nav-links a:hover, .logo img:hover, .project-banner a:hover, .switch span:hover {
+.socials-links a:hover, .footer-left a:hover, .footer-right a:hover, .nav-links a:hover, .logo img:hover, .project-banner a:hover, .switch span:hover, .resume-link:hover{
     cursor: pointer;
 }
