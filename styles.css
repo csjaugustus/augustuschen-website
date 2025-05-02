@@ -105,11 +105,10 @@ body {
 }
 
 .resume-container {
-    width: 80%;    /* Default width */
-    /* max-width: 1200px; Optional max width to prevent it from becoming too wide */
-    margin: 0 auto;
+    flex: 1; /* Takes the remaining space */
     padding: 0 10px;
 }
+
 
 .text-container {
     display: flex;
@@ -346,10 +345,10 @@ footer {
 .sidedock-column {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    max-width: 20%;
+    flex: 0 0 20%; /* Takes exactly 20%, no growing or shrinking */
     margin-top: 10px;
 }
+
 
 .sidedock {
     background-color: #1E1E1E;
@@ -599,3 +598,19 @@ hr {
 .socials-links a:hover, .footer-left a:hover, .footer-right a:hover, .nav-links a:hover, .logo img:hover, .project-banner a:hover, .switch span:hover, .resume-link:hover{
     cursor: pointer;
 }
+
+select#cv-selector {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #1E1E1E;
+    color: #F0F0F0;
+    border: 1px solid #F0F0F0;
+    width: 100%;
+    font-size: 12px;
+}
+
+.switch input[disabled] + .slider {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
