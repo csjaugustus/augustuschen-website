@@ -9,6 +9,11 @@
     <link rel="shortcut icon" href="./Images/esc_android_robot_5d07d32e-dc8d-4625-8c55-cd14af2682bb.ico" type="image/x-icon">
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('authenticated') !== 'true') {
+            window.location.href = 'welcome.html';
+        }
+        </script>
     <div class="container">
         <div class="navbar">
             <a href="index.html" class="logo"><img src="./Images/site_logo.png" alt="Logo"></a>
@@ -31,7 +36,7 @@
                         <div class="entry">
                             <h3>Upwork</h3>
                             <p>Freelance Video Editor & Subtitle Translator </p>
-                            <a class="resume-time-period">October 2021 – Present (Remote)</a>
+                            <a class="resume-time-period">October 2021 – July 2024 (Remote)</a>
                             <ul>
                                 <li>Produced weekly videos with subtitles (zh-TW) for YouTuber <i>@drgrace</i> (from ≈100k to >600k subs).</li>
                                 <li>Used Python to automate tasks including video title/product cards generation, text-to-speech, translation, and text post-processing; used Midjourney for generation of royalty-free illustrations.</li>

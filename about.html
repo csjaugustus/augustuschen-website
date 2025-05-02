@@ -9,6 +9,11 @@
     <link rel="shortcut icon" href="./Images/esc_android_robot_5d07d32e-dc8d-4625-8c55-cd14af2682bb.ico" type="image/x-icon">
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('authenticated') !== 'true') {
+            window.location.href = 'welcome.html';
+        }
+        </script>
     <div class="container">
         <div class="navbar">
             <a href="index.html" class="logo"><img src="./Images/site_logo.png" alt="Logo"></a>

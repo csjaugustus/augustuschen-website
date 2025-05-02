@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./Images/esc_android_robot_5d07d32e-dc8d-4625-8c55-cd14af2682bb.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./Images/esc_android_robot_5d07d32e-dc8d-4625-8c55-cd14af2682bb.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #282828;
+            color: #F0F0F0;
+        }
+        .welcome-navbar {
+            background: #1E1E1E;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .welcome-navbar .logo img {
+            height: 40px;
+        }
+        .welcome-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+        }
+        #password-input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #F0F0F0;
+            background-color: #1E1E1E;
+            color: #F0F0F0;
+            margin: 10px;
+            width: 200px;
+        }
+        #submit-btn {
+            background-color: #e3663d;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #submit-btn:hover {
+            background-color: #ff7e5f;
+        }
+        #error-msg {
+            color: #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-navbar">
+        <a href="welcome.html" class="logo"><img src="./Images/site_logo.png" alt="Logo"></a>
+    </div>
+    <div class="welcome-content">
+        <h1 class="gradient-text">You've found me...</h1>
+        <p>Enter the keyword to proceed...</p>
+        <input type="password" id="password-input" placeholder="Enter keyword">
+        <button id="submit-btn">Submit</button>
+        <p id="error-msg" style="display:none;">Incorrect keyword, please try again.</p>
+    </div>
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            var password = document.getElementById('password-input').value;
+            if (password === 'sapides') {
+                localStorage.setItem('authenticated', 'true');
+                window.location.href = 'index.html';
+            } else {
+                document.getElementById('error-msg').style.display = 'block';
+            }
+        });
+        document.getElementById('password-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('submit-btn').click();
+            }
+        });
+    </script>
+</body>
+</html>
