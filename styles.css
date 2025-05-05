@@ -614,3 +614,21 @@ select#cv-selector {
     cursor: not-allowed;
 }
 
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.job-title h3,
+.job-title p {
+    margin: 0;
+}
+
+.job-dates {
+    font-style: italic;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
